@@ -1,4 +1,4 @@
 <p>{{quote.author}}</p>
-<button type="button" class="btn btn-danger" (click)='quoteComplete(true)'>Delete</button>
+<button type="button" class="btn btn-danger" (click)='quoteDelete(true)'>Delete</button>
+<p>This goal will be complete in {{quote.completeDate|dateCount}} days</p>
 <app-like-dislike></app-like-dislike>
-<p>Posted on {{quote.completeDate | date}}</p>

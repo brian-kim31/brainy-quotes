@@ -19,7 +19,7 @@ export class DateCountPipe implements PipeTransform {
     if (dateCounter >= 1 && value > todayWithNoTime) {
       return dateCounter;
     } else {
-      return null;
+      return 0;
     }
   }
 }
