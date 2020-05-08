@@ -11,17 +11,20 @@ export class QuoteComponent implements OnInit {
     new Quote(
       1,
       '"No one in the brief history of computing has ever written a piece of perfect software. Its unlikely that youll be the first." ',
-      'Author:  Andy Hunt'
+      'Author:  Andy Hunt',
+      new Date(2019, 1, 14)
     ),
     new Quote(
       2,
       'The adventure of life is to learn. The purpose of life is to grow. The nature of life is to change. The challenge of life is to overcome. The essence of life is to care. The opportunity of like is to serve. The secret of life is to dare. The spice of life is to befriend. The beauty of life is to give.',
-      'Author: William Arthur Ward'
+      'Author: William Arthur Ward',
+      new Date(2020, 4, 3)
     ),
     new Quote(
       3,
       'Most people would sooner die than think; in fact, they do so',
-      'Author: Bertrand Russell'
+      'Author: Bertrand Russell',
+      new Date(2020, 4, 3)
     ),
   ];
   toggleDetails(index) {
