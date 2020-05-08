@@ -8,9 +8,21 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'my name is brian', 'ivan'),
-    new Quote(2, 'i am a developer', 'brian'),
-    new Quote(3, 'i am successful', 'ken'),
+    new Quote(
+      1,
+      '"No one in the brief history of computing has ever written a piece of perfect software. Its unlikely that youll be the first." ',
+      'Author:  Andy Hunt'
+    ),
+    new Quote(
+      2,
+      'The adventure of life is to learn. The purpose of life is to grow. The nature of life is to change. The challenge of life is to overcome. The essence of life is to care. The opportunity of like is to serve. The secret of life is to dare. The spice of life is to befriend. The beauty of life is to give.',
+      'Author: William Arthur Ward'
+    ),
+    new Quote(
+      3,
+      'Most people would sooner die than think; in fact, they do so',
+      'Author: Bertrand Russell'
+    ),
   ];
   toggleDetails(index) {
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
