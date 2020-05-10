@@ -2,8 +2,7 @@ export class Quote {
   showAuthor: boolean;
   constructor(
     public id: number,
-    public name: string,
-
+    public quo: string,
     public author: string,
     public completeDate: Date
   ) {
