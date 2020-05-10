@@ -10,6 +10,7 @@ import { LikeDislikeComponent } from './like-dislike/like-dislike.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighlightDirective } from './highlight.directive';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HighlightDirective } from './highlight.directive';
     DateCountPipe,
     QuoteFormComponent,
     HighlightDirective,
+    NavBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
