@@ -1,4 +1,6 @@
-# Quote
+[![codebeat badge](https://codebeat.co/badges/cdefa376-7941-4e60-a372-caa88f48db82)](https://codebeat.co/projects/github-com-brayokenya-brainy-quotes-master)
+
+# Brainy Quote
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
