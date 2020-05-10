@@ -1,26 +1,30 @@
-<div class="container">
+<div class="jumbotron">
+    <div class="container">
 
-    <h1>Quotes </h1>
+        <h1>Brainy Quotes 🧠 </h1>
+        <h4>listen closely,... you can hear them wise words</h4>
 
-    <hr>
+        <hr>
 
-    <div class="row">
-        <div class="col-md-6">
-            <div *ngFor='let quote of quotes;let i = index'>
-                <div>
-                    <h6 id={{i}} appHighlight>{{quote.quo}} created on {{quote.completeDate|date|uppercase}}</h6>
+        <div class="row">
+            <div class="col-md-6">
+                <div *ngFor='let quote of quotes;let i = index'>
+                    <div>
+                        <h6 id={{i}} appHighlight>{{quote.quo}} created on {{quote.completeDate|date|uppercase}}</h6>
 
-                    <button class="btn btn-primary" (click)='toggleDetails(i)'>See More</button>
-                </div>
-                <div *ngIf='quote.showAuthor'>
-                    <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event, i)'>
-                    </app-quote-detail>
+                        <button class="btn btn-primary" (click)='toggleDetails(i)'>See More</button>
+                    </div>
+                    <div *ngIf='quote.showAuthor'>
+                        <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event, i)'>
+                        </app-quote-detail>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+            </div>
         </div>
-        <div class="col-md-6">
-            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-        </div>
-    </div>
 
-    <p *ngIf='quotes.length > 5'>Today is a good day, quotes in the air 🧠 </p>
+        <p *ngIf='quotes.length > 5'>Today is a good day, quotes in the air 🧠 </p>
+    </div>
+</div>
