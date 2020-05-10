@@ -7,11 +7,11 @@ export class HighlightDirective {
   constructor(private elem: ElementRef) {}
 
   @HostListener('click') onClicks() {
-    this.bkgrndCol('green');
+    this.bkgrndCol('none');
   }
 
   @HostListener('dblclick') onDoubleClicks() {
-    this.bkgrndCol('white');
+    this.bkgrndCol('none');
   }
 
   private bkgrndCol(action: string) {
