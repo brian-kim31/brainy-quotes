@@ -1,90 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
-
-@import "~bootstrap/dist/css/bootstrap.css";
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&family=Pacifico&display=swap');
-.container {
-    background-attachment: fixed;
-    background-image: url("https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-    color: rgb(253, 252, 252);
-    font-weight: normal;
-    box-sizing: content-box;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.card {
-    border-style: solid;
-    border-color: rgb(95, 95, 95);
-    border-width: 10px;
-    text-align: center;
-    background-color: transparent;
-}
-
-.card-title {
-    color: rgb(250, 248, 248);
-    font-family: 'Special Elite', cursive;
-    ;
-    font-size: 50px;
-}
-
-.card-body {
-    color: rgb(255, 254, 254);
-    font-family: 'Special Elite', cursive;
-    ;
-    font-size: 50px;
-}
-
-.container-fluid {
-    text-align: center;
-    background-color: transparent;
-    color: whitesmoke;
-    padding-left: 100px;
-    padding-top: 200px;
-}
-
-.container-fluid h2 {
-    font-size: 50px;
-    color: rgb(240, 245, 244);
-    font-family: 'Special Elite', cursive;
-    ;
-    text-align: center;
-    font-weight: bold;
-}
-
-.form {
-    width: 900px;
-    font-size: 50px;
-}
-
-#description {
-    background-color: transparent;
-    color: rgb(10, 10, 10);
-}
-
-#name {
-    background-color: transparent;
-    color: rgb(10, 10, 10);
-}
-
-#upvote {
-    font-size: 50px;
-    background-color: transparent;
-    color: rgb(8, 216, 253);
-    border-style: none;
-}
-
-#downvote {
-    font-size: 50px;
-    background-color: transparent;
-    color: rgb(10, 230, 238);
-    border-style: none;
-}
-
-#complete {
-    background-color: transparent;
-}
+            /* You can add global styles to this file, and also import other style files */
+            
+            @import "~bootstrap/dist/css/bootstrap.css";
+            .jumbotron {
+                background-image: url("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+                overflow: scroll;
+                overflow-x: hidden;
+                padding-bottom: 100px;
+                margin-bottom: 0;
+            }
+            
+             ::-webkit-scrollbar {
+                width: 0px;
+            }
+            
+             ::-webkit-scrollbar-thumb {
+                background: #FF0000;
+            }
+            
+            .card {
+                border-style: solid;
+                border-color: rgb(95, 95, 95);
+                border-width: 10px;
+                text-align: center;
+                background-color: transparent;
+            }
+            
+            .card-title {
+                color: rgb(250, 248, 248);
+                font-family: 'Special Elite', cursive;
+                ;
+                font-size: 50px;
+            }
+            
+            .card-body {
+                color: rgb(255, 254, 254);
+                font-family: 'Special Elite', cursive;
+                ;
+                font-size: 50px;
+            }
+            
+            .container-fluid {
+                text-align: center;
+                background-color: transparent;
+                padding-left: 100px;
+                padding-top: 0px;
+            }
+            
+            .container-fluid h2 {
+                font-size: 50px;
+                font-family: 'Special Elite', cursive;
+                ;
+                text-align: center;
+                font-weight: bold;
+            }
+            
+            #description {
+                background-color: transparent;
+                color: rgb(10, 10, 10);
+            }
+            
+            #name {
+                background-color: transparent;
+                color: rgb(10, 10, 10);
+            }
+            
+            h1,
+            h4 {
+                font-family: 'Special Elite', cursive;
+            }
+            
+            .row {
+                font-family: 'Special Elite', cursive;
+            }
